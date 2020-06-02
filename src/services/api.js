@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://dog.ceo/api/breeds/image/random',
+  baseURL: 'https://dog.ceo/api/',
 })
+
 
 export default api;

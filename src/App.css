@@ -1,7 +1,177 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: 0 !important;
 }
 
 body {
-  background: rgb(243, 251, 255);
+  font: 400 14px Roboto, sans-serif;
+  background: Lavender;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.display__photos {
+  display: flex;
+  flex: 1;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.photo__display {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo__display--item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img__default {
+  width: 50%;
+  display: flex;
+
+  opacity: 0.15;
+  -moz-opacity: 0.15;
+  filter: alpha(opacity=15);
+}
+
+.select__block {
+  padding: 50px 0;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.section__select {
+  background: #708090;
+  padding: 30px;
+}
+
+.layout__breed {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.layout__breed--dog {
+  max-height: 50%;
+  margin: 0 200px;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.layout__breed--text {
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 10pt;
+  font-weight: bolder;
+  margin-top: -40px;
+  text-align: center;
+}
+
+.display__menus {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 550px;
+}
+
+.display__menus--color {
+  margin: 20px 20px;
+  align-items: left;
+  padding: 0 20px;
+}
+
+.display__menus--font {
+  margin: 20px 20px;
+  align-items: left;
+  padding: 0 20px;
+}
+
+div[id^="font-picker"] .dropdown-button {
+  background: #fff !important;
+  width: 100% !important;
+}
+
+div[id^="font-picker"] {
+  box-shadow: none !important;
+  border: none;
+}
+
+div[id^="font-picker"].expanded ul {
+  width: 100% !important;
+  background: #fff;
+}
+
+div[id^="font-picker"] .dropdown-icon.finished::before {
+  border-top: 6px solid rgb(190, 190, 190) !important;
+  width: 100% !important;
+}
+
+.font-list-item {
+  background: #fff !important;
+}
+
+.button__margin {
+  margin: 7px;
+}
+
+.active-font {
+  background: rgb(207, 207, 207) !important;
+}
+
+.Gray {
+  background: Gray !important;
+  color: #fff !important;
+}
+
+.Navy {
+  background: Navy !important;
+  color: #fff !important;
+}
+
+.LightSkyBlue {
+  background: LightSkyBlue !important;
+  color: #fff !important;
+}
+
+.DarkSlateGray {
+  background: DarkSlateGray !important;
+  color: #fff !important;
+}
+
+.ForestGreen {
+  background: ForestGreen !important;
+  color: #fff !important;
+}
+
+.YellowGreen {
+  background: YellowGreen !important;
+  color: #fff !important;
+}
+
+.SaddleBrown {
+  background: SaddleBrown !important;
+  color: #fff !important;
+}
+
+.Teal {
+  background: Teal !important;
+  color: #fff !important;
 }
