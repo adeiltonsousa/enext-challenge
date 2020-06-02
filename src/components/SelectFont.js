@@ -9,7 +9,7 @@ export default function SelectFont() {
         <>
             <p>Selecione um estilo de font:</p>
             <FontPicker
-                apiKey={process.env.API_FONTS_KEY}
+                apiKey={process.env.GATSBY_GOOGLE_API_KEY}
                 limit="10"
                 activeFontFamily={activeFontFamily}
                 onChange={(nextFont) =>
