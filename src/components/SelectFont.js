@@ -9,7 +9,7 @@ export default function SelectFont() {
         <>
             <p>Selecione um estilo de font:</p>
             <FontPicker
-                apiKey="AIzaSyCJzSHSy2ejDXkbAF51ejCLO0djMRjHp0k"
+                apiKey={process.env.API_FONTS_KEY}
                 limit="10"
                 activeFontFamily={activeFontFamily}
                 onChange={(nextFont) =>
