@@ -7,9 +7,9 @@ export default function SelectFont() {
 
     return (
         <>
-            <p>Selecione um estilo de font:</p>
+        <p>Selecione um estilo de font:</p>
             <FontPicker
-                apiKey={"AIzaSyCJzSHSy2ejDXkbAF51ejCLO0djMRjHp0k"}
+                apiKey={process.env.REACT_APP_API_FONTS}
                 limit="10"
                 activeFontFamily={activeFontFamily}
                 onChange={(nextFont) =>
